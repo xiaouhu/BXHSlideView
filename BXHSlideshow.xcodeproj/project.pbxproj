@@ -13,6 +13,14 @@
 		A6FDDCA31F4D22F800C86620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FDDCA11F4D22F800C86620 /* Main.storyboard */; };
 		A6FDDCA51F4D22F800C86620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FDDCA41F4D22F800C86620 /* Assets.xcassets */; };
 		A6FDDCA81F4D22F800C86620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FDDCA61F4D22F800C86620 /* LaunchScreen.storyboard */; };
+		A6FDDCB21F4D269E00C86620 /* BXHSlideShowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDDCB11F4D269E00C86620 /* BXHSlideShowItem.m */; };
+		A6FDDCB51F4D26AC00C86620 /* BXHSlideShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDDCB41F4D26AC00C86620 /* BXHSlideShowView.m */; };
+		A6FDDCB81F4D4DD200C86620 /* UIView+BXHMyView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDDCB71F4D4DD200C86620 /* UIView+BXHMyView.m */; };
+		A6FDDCBB1F4D5C7300C86620 /* MyImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDDCBA1F4D5C7300C86620 /* MyImageItem.m */; };
+		A6FDDCBE1F4D626500C86620 /* AFNetWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FDDCBC1F4D626500C86620 /* AFNetWorkSDK.framework */; };
+		A6FDDCBF1F4D626500C86620 /* BXHNetWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FDDCBD1F4D626500C86620 /* BXHNetWorkSDK.framework */; };
+		A6FDDCC21F4D628C00C86620 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FDDCC11F4D628C00C86620 /* libsqlite3.tbd */; };
+		A6FDDCC51F4D694700C86620 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FDDCC41F4D694700C86620 /* NSTimer+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,19 @@
 		A6FDDCA41F4D22F800C86620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6FDDCA71F4D22F800C86620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6FDDCA91F4D22F800C86620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FDDCB01F4D269E00C86620 /* BXHSlideShowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHSlideShowItem.h; sourceTree = "<group>"; };
+		A6FDDCB11F4D269E00C86620 /* BXHSlideShowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHSlideShowItem.m; sourceTree = "<group>"; };
+		A6FDDCB31F4D26AC00C86620 /* BXHSlideShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BXHSlideShowView.h; sourceTree = "<group>"; };
+		A6FDDCB41F4D26AC00C86620 /* BXHSlideShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BXHSlideShowView.m; sourceTree = "<group>"; };
+		A6FDDCB61F4D4DD200C86620 /* UIView+BXHMyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BXHMyView.h"; sourceTree = "<group>"; };
+		A6FDDCB71F4D4DD200C86620 /* UIView+BXHMyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BXHMyView.m"; sourceTree = "<group>"; };
+		A6FDDCB91F4D5C7300C86620 /* MyImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageItem.h; sourceTree = "<group>"; };
+		A6FDDCBA1F4D5C7300C86620 /* MyImageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageItem.m; sourceTree = "<group>"; };
+		A6FDDCBC1F4D626500C86620 /* AFNetWorkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetWorkSDK.framework; sourceTree = "<group>"; };
+		A6FDDCBD1F4D626500C86620 /* BXHNetWorkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BXHNetWorkSDK.framework; sourceTree = "<group>"; };
+		A6FDDCC11F4D628C00C86620 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A6FDDCC31F4D694700C86620 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		A6FDDCC41F4D694700C86620 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FDDCC21F4D628C00C86620 /* libsqlite3.tbd in Frameworks */,
+				A6FDDCBE1F4D626500C86620 /* AFNetWorkSDK.framework in Frameworks */,
+				A6FDDCBF1F4D626500C86620 /* BXHNetWorkSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +68,7 @@
 			children = (
 				A6FDDC971F4D22F800C86620 /* BXHSlideshow */,
 				A6FDDC961F4D22F800C86620 /* Products */,
+				A6FDDCC01F4D628C00C86620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +83,11 @@
 		A6FDDC971F4D22F800C86620 /* BXHSlideshow */ = {
 			isa = PBXGroup;
 			children = (
+				A6FDDCC31F4D694700C86620 /* NSTimer+Addition.h */,
+				A6FDDCC41F4D694700C86620 /* NSTimer+Addition.m */,
+				A6FDDCBC1F4D626500C86620 /* AFNetWorkSDK.framework */,
+				A6FDDCBD1F4D626500C86620 /* BXHNetWorkSDK.framework */,
+				A6FDDCAF1F4D267A00C86620 /* BXHSlideShow */,
 				A6FDDC9B1F4D22F800C86620 /* AppDelegate.h */,
 				A6FDDC9C1F4D22F800C86620 /* AppDelegate.m */,
 				A6FDDC9E1F4D22F800C86620 /* ViewController.h */,
@@ -77,6 +107,29 @@
 				A6FDDC991F4D22F800C86620 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6FDDCAF1F4D267A00C86620 /* BXHSlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				A6FDDCB61F4D4DD200C86620 /* UIView+BXHMyView.h */,
+				A6FDDCB71F4D4DD200C86620 /* UIView+BXHMyView.m */,
+				A6FDDCB01F4D269E00C86620 /* BXHSlideShowItem.h */,
+				A6FDDCB11F4D269E00C86620 /* BXHSlideShowItem.m */,
+				A6FDDCB31F4D26AC00C86620 /* BXHSlideShowView.h */,
+				A6FDDCB41F4D26AC00C86620 /* BXHSlideShowView.m */,
+				A6FDDCB91F4D5C7300C86620 /* MyImageItem.h */,
+				A6FDDCBA1F4D5C7300C86620 /* MyImageItem.m */,
+			);
+			name = BXHSlideShow;
+			sourceTree = "<group>";
+		};
+		A6FDDCC01F4D628C00C86620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FDDCC11F4D628C00C86620 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FDDCB81F4D4DD200C86620 /* UIView+BXHMyView.m in Sources */,
+				A6FDDCB21F4D269E00C86620 /* BXHSlideShowItem.m in Sources */,
 				A6FDDCA01F4D22F800C86620 /* ViewController.m in Sources */,
+				A6FDDCB51F4D26AC00C86620 /* BXHSlideShowView.m in Sources */,
 				A6FDDC9D1F4D22F800C86620 /* AppDelegate.m in Sources */,
 				A6FDDC9A1F4D22F800C86620 /* main.m in Sources */,
+				A6FDDCC51F4D694700C86620 /* NSTimer+Addition.m in Sources */,
+				A6FDDCBB1F4D5C7300C86620 /* MyImageItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BXHSlideshow",
+				);
 				INFOPLIST_FILE = BXHSlideshow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.bxxhWork.project.BXHSlideshow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -286,8 +349,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BXHSlideshow",
+				);
 				INFOPLIST_FILE = BXHSlideshow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Com.bxxhWork.project.BXHSlideshow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

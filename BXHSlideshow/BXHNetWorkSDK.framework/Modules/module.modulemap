@@ -1,0 +1,6 @@
+framework module BXHNetWorkSDK {
+  umbrella header "BXHNetWorkSDK.h"
+
+  export *
+  module * { export * }
+}
