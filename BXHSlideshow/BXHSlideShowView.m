@@ -59,7 +59,6 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
 {
     if (self = [super init])
     {
-        
         _direction = direction;
         self.itemClassName = NSStringFromClass([BXHSlideShowItem class]);
         _panGestureRecignizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panActionDeal:)];
@@ -71,9 +70,9 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
 - (void)didMoveToSuperview
 {
     [super didMoveToSuperview];
+    [self setUpSubViews];
     [self reloadData];
 }
-
 
 #pragma mark - public
 - (void)registItemWithClassName:(NSString *)className
@@ -85,7 +84,7 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
 {
     self.centerIndex = 0;
     self.rows = [self.dataSource slideViewNumberOfRows:self];
-    
+    _pageControl.numberOfPages = self.rows;
     if (self.rows == 1)
     {
         [self.dataSource slideView:self reloadSlideItem:self.leftItem atIndex:0];
@@ -123,6 +122,16 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
 
 
 #pragma mark - private
+- (void)setUpSubViews
+{
+    [self addSubview:self.leftItem];
+    [self addSubview:self.centerItem];
+    [self addSubview:self.rightItem];
+    _pageControl = [[UIPageControl alloc] init];
+    _pageControl.enabled = NO;
+    [self addSubview:_pageControl];
+}
+
 - (void)clickAction
 {
     [self.delegate slideView:self didSelectRow:self.centerIndex];
@@ -282,7 +291,6 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
     NSInteger leftIndex = (self.centerIndex - 1) < 0 ? (self.rows - 1) : (self.centerIndex - 1);
     [self.dataSource slideView:self reloadSlideItem:self.leftItem atIndex:leftIndex];
     
-
 }
 
 ////////////////////判断滑动方向//////////////////////////
@@ -336,6 +344,7 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
     self.leftItem.frame = CGRectMake(-self.width, 0, self.width, self.height);
     self.centerItem.frame = CGRectMake(0, 0, self.width, self.height);
     self.rightItem.frame = CGRectMake(self.width, 0, self.width, self.height);
+    self.pageControl.frame = CGRectMake(10, self.height - 40, self.width - 20, 30);
 }
 
 #pragma mark - lazyLoad
@@ -346,7 +355,6 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
         _leftItem = [[NSClassFromString(self.itemClassName) alloc] init];
         _leftItem.backgroundColor = [UIColor redColor];
         [_leftItem addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_leftItem];
 
     }
     return _leftItem;
@@ -359,7 +367,6 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
         _centerItem = [[NSClassFromString(self.itemClassName) alloc] init];
         _centerItem.backgroundColor = [UIColor yellowColor];
         [_centerItem addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_centerItem];
 
     }
     return _centerItem;
@@ -372,9 +379,14 @@ typedef NS_ENUM(NSInteger, BXHSlidePanDirection)
         _rightItem = [[NSClassFromString(self.itemClassName) alloc] init];
         _rightItem.backgroundColor = [UIColor greenColor];
         [_rightItem addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_rightItem];
     }
     return _rightItem;
+}
+
+- (void)setCenterIndex:(NSInteger)centerIndex
+{
+    _centerIndex = centerIndex;
+    _pageControl.currentPage = _centerIndex;
 }
 
 /*

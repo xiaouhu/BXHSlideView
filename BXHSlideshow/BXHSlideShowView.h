@@ -33,6 +33,8 @@ typedef NS_ENUM(NSInteger,BXHSlideViewScrollDirection)
 
 @interface BXHSlideShowView : UIView <UIGestureRecognizerDelegate>
 
+@property (nonatomic, readonly, strong) UIPageControl *pageControl;
+
 @property (nonatomic, readonly, assign) BXHSlideViewScrollDirection direction;
 
 @property (nonatomic, weak) id <BXHSlideShowViewDataSource>dataSource;

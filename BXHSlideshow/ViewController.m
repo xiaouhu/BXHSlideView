@@ -34,7 +34,6 @@
     self.showView.frame = self.view.bounds;
     self.showView.dataSource = self;
     self.showView.delegate = self;
-    
     [self.view addSubview:self.showView];
     // Do any additional setup after loading the view, typically from a nib.
 }
